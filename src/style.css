@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(135deg, #e0f2f1, #ede7f6); color: #1f2937; }
+.card { width: 100%; max-width: 440px; background: #fff; border-radius: 16px; padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08); display: grid; gap: 1rem; }
+h1 { margin: 0; font-size: 1.6rem; color: #00695c; }
+label, legend { display: grid; gap: .35rem; font-weight: 600; font-size: .9rem; }
+fieldset { border: 0; padding: 0; margin: 0; }
+input { font: inherit; padding: .6rem .75rem; border: 1px solid #d1d5db; border-radius: 8px; width: 100%; }
+input:focus { outline: 2px solid #26a69a; border-color: transparent; }
+.presets { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; margin-top: .35rem; }
+.presets button { font: inherit; font-weight: 600; padding: .6rem; border: 0; border-radius: 8px;
+  background: #e0f2f1; color: #00695c; cursor: pointer; }
+.presets button.active { background: #00897b; color: #fff; }
+.error { color: #c62828; min-height: 1.2em; margin: 0; font-size: .85rem; }
+.results { background: #004d40; color: #fff; border-radius: 12px; padding: 1rem 1.25rem; display: grid; gap: .5rem; }
+.results div { display: flex; justify-content: space-between; align-items: baseline; }
+.results .hl strong { font-size: 1.6rem; color: #a7ffeb; }
+@media (max-width: 420px) { .presets { grid-template-columns: repeat(2, 1fr); } .card { padding: 1.25rem; } }
